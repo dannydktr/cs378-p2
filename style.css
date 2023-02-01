@@ -3,7 +3,6 @@ body {
   }
 
   div {
-    border: dashed black 1px;
     display: inline-block;
     height: 100%;
     width: 100%;
