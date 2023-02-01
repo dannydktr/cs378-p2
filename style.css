@@ -1,3 +1,25 @@
 body {
     padding-top: 10px;
   }
+
+  div {
+    border: dashed black 1px;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+  }
+
+  .box-menu {
+    padding: 3% 10% 3% 10%;
+  }
+
+  .info-menu {
+    margin-bottom: 1%;
+  }
+
+  .button {
+    border-radius: 20px;
+    font-size:80%;
+    size: 100%;
+    background-color: lightblue;
+  }
