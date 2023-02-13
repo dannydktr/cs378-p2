@@ -32,12 +32,9 @@ buttonContainer.forEach(function (set) {
     });
 
     clearButton.addEventListener("click", function () {
-
-        buttonContainer.forEach(function (set) {
-            const numberDisplay = set.querySelector(".number");
-            number = 0;
-            numberDisplay.textContent = 0;
-        });
+        const numberDisplay = set.querySelector(".number");
+        number = 0;
+        numberDisplay.textContent = 0;
         total_cost = 0;
         totalDisplay.textContent = 0
     });
@@ -55,19 +52,13 @@ orderButton.addEventListener("click", function () {
         if (parseInt(numberDisplay.textContent) != 0) {
             empty_item++;
         }
-        number = 0;
-        numberDisplay.textContent = 0;
     });
-    total_cost = 0;
-    totalDisplay.textContent = 0;
     if (empty_item == 0) {
         alert("No items in cart");
     } else {
         alert(order_message);
     }
-    buttonContainer.forEach(function (set) {
-        clearButton.click();
-    });
+    clearButton.click();
 });
 
 
