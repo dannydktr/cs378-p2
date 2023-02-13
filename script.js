@@ -5,30 +5,30 @@ const clearButton = document.querySelector(".clear-button");
 
 
 
-let total = 0;
+let total_cost = 0;
 const menu_items = ["Mac & Cheese", "Pasta", "Taco", "Enchilada"];
 
 buttonContainer.forEach(function (set) {
     let number = 0;
     const factor = parseInt(set.dataset.factor);
-    const incrementButton = set.querySelector(".increment");
-    const decrementButton = set.querySelector(".decrement");
+    const increment = set.querySelector(".increment");
+    const decrement = set.querySelector(".decrement");
     const numberDisplay = set.querySelector(".number");
 
-    incrementButton.addEventListener("click", function () {
+    increment.addEventListener("click", function () {
         number++;
-        total += factor;
+        total_cost += factor;
         numberDisplay.textContent = number;
-        totalDisplay.textContent = total;
+        totalDisplay.textContent = total_cost;
     });
 
-    decrementButton.addEventListener("click", function () {
+    decrement.addEventListener("click", function () {
         if (number > 0) {
             number--;
-            total -= factor;
+            total_cost -= factor;
         }
         numberDisplay.textContent = number;
-        totalDisplay.textContent = total;
+        totalDisplay.textContent = total_cost;
     });
 
     clearButton.addEventListener("click", function () {
@@ -38,7 +38,7 @@ buttonContainer.forEach(function (set) {
             number = 0;
             numberDisplay.textContent = 0;
         });
-        total = 0;
+        total_cost = 0;
         totalDisplay.textContent = 0
     });
 
@@ -58,7 +58,7 @@ orderButton.addEventListener("click", function () {
         number = 0;
         numberDisplay.textContent = 0;
     });
-    total = 0;
+    total_cost = 0;
     totalDisplay.textContent = 0;
     if (empty_item == 0) {
         alert("No items in cart");
