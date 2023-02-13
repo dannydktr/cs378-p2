@@ -47,16 +47,24 @@ buttonContainer.forEach(function (set) {
 orderButton.addEventListener("click", function () {
     let order_message = "Order Placed!\n";
     let index = 0;
+    let empty_item = 0;
     buttonContainer.forEach(function (set) {
         const numberDisplay = set.querySelector(".number");
         order_message += numberDisplay.textContent + " " + menu_items[index] + "\n";
         index++;
+        if (parseInt(numberDisplay.textContent) != 0) {
+            empty_item++;
+        }
         number = 0;
         numberDisplay.textContent = 0;
     });
     total = 0;
     totalDisplay.textContent = 0;
-    alert(order_message);
+    if (empty_item == 0) {
+        alert("No items in cart");
+    } else {
+        alert(order_message);
+    }
     buttonContainer.forEach(function (set) {
         clearButton.click();
     });
