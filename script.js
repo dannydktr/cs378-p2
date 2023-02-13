@@ -3,8 +3,6 @@ const totalDisplay = document.querySelector(".total-cost");
 const orderButton = document.querySelector(".order-button");
 const clearButton = document.querySelector(".clear-button");
 
-
-
 let total_cost = 0;
 const menu_items = ["Mac & Cheese", "Pasta", "Taco", "Enchilada"];
 
