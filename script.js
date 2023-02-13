@@ -56,7 +56,6 @@ orderButton.addEventListener("click", function () {
     } else {
         alert(order_message);
     }
-    clearButton.click();
 });
 
 
