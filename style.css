@@ -28,9 +28,39 @@ img {
   margin-bottom: 1%;
 }
 
-.button {
-  border-radius: 20px;
+.circular-button {
+  border-radius: 50%;
   font-size: 80%;
-  size: 100%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: lightblue;
+  margin-right: 5px;
+  margin-left: 5px;
+
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5px;
+}
+
+.option-container {
+  justify-content: center;
+  display: flex;
+}
+
+.total-cost {
+  margin-right: 50px;
+}
+
+.oval-button {
+  border-radius: 25%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-right: 10px;
 }

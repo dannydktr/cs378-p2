@@ -52,10 +52,10 @@
               $5
             </div>
           </div>
-          <div style="display:inline">
-            <button class="button">
-              order
-            </button>
+          <div class="button-container" data-factor="5">
+            <button class="decrement circular-button">-</button>
+            <span class="number">0</span>
+            <button class="increment circular-button">+</button>
           </div>
         </div>
       </div>
@@ -75,66 +75,76 @@
               $8
             </div>
           </div>
-          <div style="display:inline">
-            <button class="button">
-              order
-            </button>
+          <div class="button-container" data-factor="8">
+            <button class="decrement circular-button">-</button>
+            <span class="number">0</span>
+            <button class="increment circular-button">+</button>
           </div>
         </div>
       </div>
     </div>
 
-  <div class="box-menu">
-    <div>
-      <div class="image-menu">
-        <img src="tacos.jpg" alt="Tacos">
-      </div>
-      <div style="display: inline; float: right; width: 69%;">
-        <div class="info-menu">
-          <div style="display: inline; width:90%;">
-            Tacos
-          </div>
-          <div style="display: inline; width:10%; float:right">
-            $8
-          </div>
+    <div class="box-menu">
+      <div>
+        <div class="image-menu">
+          <img src="tacos.jpg" alt="Tacos">
         </div>
-        <div style="display:inline">
-          <button class="button">
-            order
-          </button>
+        <div style="display: inline; float: right; width: 69%;">
+          <div class="info-menu">
+            <div style="display: inline; width:90%;">
+              Tacos
+            </div>
+            <div style="display: inline; width:10%; float:right">
+              $8
+            </div>
+          </div>
+          <div class="button-container" data-factor="8">
+            <button class="decrement circular-button">-</button>
+            <span class="number">0</span>
+            <button class="increment circular-button">+</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="box-menu">
-    <div>
-      <div class="image-menu">
-        <img src="enchilada.jpg" alt="Enchilada">
-      </div>
-      <div style="display: inline; float: right; width: 69%;">
-        <div class="info-menu">
-          <div style="display: inline; width:90%;">
-            Enchilada
-          </div>
-          <div style="display: inline; width:10%; float:right">
-            $10
-          </div>
+    <div class="box-menu">
+      <div>
+        <div class="image-menu">
+          <img src="enchilada.jpg" alt="Enchilada">
         </div>
-        <div style="display:inline">
-          <button class="button">
-            order
-          </button>
+        <div style="display: inline; float: right; width: 69%;">
+          <div class="info-menu">
+            <div style="display: inline; width:90%;">
+              Enchilada
+            </div>
+            <div style="display: inline; width:10%; float:right">
+              $10
+            </div>
+          </div>
+          <div class="button-container" data-factor="10">
+            <button class="decrement circular-button">-</button>
+            <span class="number">0</span>
+            <button class="increment circular-button">+</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+
+    <div class="option-container">
+      <p>Subtotal $<span class="total-cost">0</span></p>
+      <button class="order-button oval-button">
+        Order
+      </button>
+      <button class="clear-button oval-button">
+        Clear all
+      </button>
+    </div>
 
   </section>
 
 
 
-
+  <script src="script.js"></script>
 
 </body>
 
